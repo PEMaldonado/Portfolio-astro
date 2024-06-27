@@ -1,0 +1,27 @@
+---
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1
+        class="text-white text-5xl font-bold flex  items-center gap-x-4 pb-4"
+      >
+        Hola! soy Pablo <div class="flex justify-center items-center">
+          <a
+            href="https://www.linkedin.com/in/pablo-maldonado-528972144"
+            target="_blank"
+            rel="noopener"
+            class="flex justify-center items-center"
+            ><Badge> Disponible para trabajar</Badge></a>
+        </div>
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        +1 año de experiencia. <span class="text-cyan-200">Desarrollador web Full stack.</span> De Santa Fe,
+        Argentina🧉. <span class="text-cyan-200">Especializado en backend.</span>
+      </h2>
+    </section>
+  </main>
+</Layout>
