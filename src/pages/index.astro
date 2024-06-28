@@ -1,27 +1,48 @@
 ---
 import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHub from "../icons/GitHub.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout
+  title="Porfolio de Pablo Maldonado - Desarrollador Web"
+  description="Desarrollador web fullstack especializado en backend"
+>
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
-      <h1
-        class="text-white text-5xl font-bold flex  items-center gap-x-4 pb-4"
-      >
+      <h1 class="text-white text-5xl font-bold flex items-center gap-x-4 pb-4">
         Hola! soy Pablo <div class="flex justify-center items-center">
           <a
             href="https://www.linkedin.com/in/pablo-maldonado-528972144"
             target="_blank"
             rel="noopener"
             class="flex justify-center items-center"
-            ><Badge> Disponible para trabajar</Badge></a>
+            ><Badge> Disponible para trabajar</Badge></a
+          >
         </div>
       </h1>
-      <h2 class="text-2xl text-wrap">
-        +1 año de experiencia. <span class="text-cyan-200">Desarrollador web Full stack.</span> De Santa Fe,
-        Argentina🧉. <span class="text-cyan-200">Especializado en backend.</span>
+      <h2 class="text-2xl text-wrap mb-4">
+        +1 año de experiencia. <span class="text-cyan-200"
+          >Desarrollador web Full stack.</span
+        > De Santa Fe, Argentina🧉. <span class="text-cyan-200"
+          >Especializado en backend.</span
+        >
       </h2>
+
+      <nav class="flex gap-x-2">
+        <SocialPill
+          href="https://www.linkedin.com/in/pablo-maldonado-528972144"
+        >
+          <LinkedIn class="size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/PEMaldonado">
+          <GitHub class="size-6" />
+          GitHub
+        </SocialPill>
+      </nav>
     </section>
   </main>
 </Layout>
