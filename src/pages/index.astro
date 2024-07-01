@@ -1,8 +1,11 @@
 ---
 import Badge from "../components/Badge.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 import SocialPill from "../components/SocialPill.astro";
 import GitHub from "../icons/GitHub.astro";
 import LinkedIn from "../icons/LinkedIn.astro";
+import Briefcase from "../components/Briefcase.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -11,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
   description="Desarrollador web fullstack especializado en backend"
 >
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <SectionContainer class="py-44">
       <h1 class="text-white text-5xl font-bold flex items-center gap-x-4 pb-4">
         Hola! soy Pablo <div class="flex justify-center items-center">
           <a
@@ -43,6 +46,13 @@ import Layout from "../layouts/Layout.astro";
           GitHub
         </SocialPill>
       </nav>
-    </section>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-4xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase class="size-7 "/>
+        Experiencia laboral</h2>
+      <Experience />
+    </SectionContainer>
   </main>
 </Layout>

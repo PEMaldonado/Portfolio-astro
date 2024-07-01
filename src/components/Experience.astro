@@ -1,0 +1,32 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Abril 2024",
+    title: "Desarrollador backend Laravel en ARGDG",
+    body: "Desarrollo de API REST. Diseño y mantenimiento de bases de datos. Despliegue de aplicaciones en servidor Linux Ubuntu.",
+    link: "https://tailwindui.com/",
+  },
+  {
+    date: "Octubre 2023",
+    title: "Desarrollador Fullstack Laravel en UNB",
+    body: "Desarrollo de aplicaciones web fullstack. Diseño y mantenimiento de bases de datos. Web scraping, despliegue de aplicaciones en servidor Linux CentOS.",
+  },
+  {
+    date: "Julio 2023",
+    title: "Desarrollador Frontend React en Sistema nube",
+    body: "Mantenimiento de la plataforma. Integración de APIs.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ml-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
