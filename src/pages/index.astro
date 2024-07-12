@@ -7,15 +7,17 @@ import GitHub from "../icons/GitHub.astro";
 import LinkedIn from "../icons/LinkedIn.astro";
 import Briefcase from "../components/Briefcase.astro";
 import Layout from "../layouts/Layout.astro";
+import Code from "../icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
   title="Porfolio de Pablo Maldonado - Desarrollador Web"
   description="Desarrollador web fullstack especializado en backend"
 >
-  <main>
+  <main class="px-2 lg:px-0">
     <SectionContainer class="py-44">
-      <h1 class="text-white text-5xl font-bold flex items-center gap-x-4 pb-4">
+      <h1 class="text-white text-3xl md:text-5xl font-bold flex items-center gap-x-4 pb-4">
         Hola! soy Pablo <div class="flex justify-center items-center">
           <a
             href="https://www.linkedin.com/in/pablo-maldonado-528972144"
@@ -26,7 +28,7 @@ import Layout from "../layouts/Layout.astro";
           >
         </div>
       </h1>
-      <h2 class="text-2xl text-wrap mb-4">
+      <h2 class=" text-base md:text-2xl text-wrap mb-4">
         +1 año de experiencia. <span class="text-cyan-200"
           >Desarrollador web Full stack.</span
         > De Santa Fe, Argentina🧉. <span class="text-cyan-200"
@@ -38,21 +40,28 @@ import Layout from "../layouts/Layout.astro";
         <SocialPill
           href="https://www.linkedin.com/in/pablo-maldonado-528972144"
         >
-          <LinkedIn class="size-6" />
+          <LinkedIn class="size-4 md:size-6" />
           LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/PEMaldonado">
-          <GitHub class="size-6" />
+          <GitHub class="size-4 md:size-6" />
           GitHub
         </SocialPill>
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="experiencia">
-      <h2 class="text-4xl font-semibold mb-6 flex gap-x-3 items-center">
+    <SectionContainer id="experiencia" class="pb-44" >
+      <h2 class="text-3xl md:text-4xl font-semibold mb-6 flex gap-x-3 items-center">
         <Briefcase class="size-7 "/>
         Experiencia laboral</h2>
       <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="experiencia" >
+      <h2 class="text-3xl md:text-4xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Code class="size-7 "/>
+        Proyectos</h2>
+      <Projects />
     </SectionContainer>
   </main>
 </Layout>

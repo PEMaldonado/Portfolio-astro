@@ -1,0 +1,46 @@
+---
+const PROJECTS = [
+  {
+    title: "Desarrollador backend Laravel en ARGDG",
+    description:
+      "Desarrollo de API REST. Diseño y mantenimiento de bases de datos. Despliegue de aplicaciones en servidor Linux Ubuntu.",
+    link: "#",
+    github: "#",
+    image: "https://via.placeholder.com/300x200",
+    tags: ["Laravel", "PHP", "MySQL"],
+  },
+  {
+    title: "Desarrollador Fullstack Laravel en UNB",
+    description:
+      "Desarrollo de aplicaciones web fullstack. Diseño y mantenimiento de bases de datos. Web scraping, despliegue de aplicaciones en servidor Linux CentOS.",
+    link: "#",
+    github: "#",
+    image: "https://via.placeholder.com/300x200",
+    tags: ["Laravel", "PHP", "MySQL"],
+  },
+  {
+    title: "Desarrollador Frontend React en Sistema nube",
+    description:
+      "Mantenimiento de la plataforma. Integración de APIs externas.",
+    link: "#",
+    github: "#",
+    image: "https://via.placeholder.com/300x200",
+    tags: ["Laravel", "PHP", "MySQL"],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, link, github, image, tags }) => (
+    <article class="mb-10 ml-4">
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <ul>
+        {tags.map((tag) => (
+          <li>{tag}</li>
+        ))}
+      </ul>
+      <img src={image} alt={`Captura de pantalla del proyecto ${title}`} />
+    </article>
+  ))
+}
